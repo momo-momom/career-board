@@ -104,6 +104,31 @@ button {
   padding: 18px 16px 24px;
 }
 
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.summary-card {
+  padding: 14px 8px;
+  text-align: center;
+}
+
+.summary-card__value {
+  margin: 0;
+  color: #2563eb;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.summary-card__label {
+  margin: 7px 0 0;
+  color: #64748b;
+  font-size: 12px;
+}
+
 .card {
   border: 1px solid #dfe7f2;
   border-radius: 16px;
@@ -140,6 +165,22 @@ h2 {
   color: #536273;
   font-size: 14px;
   line-height: 1.7;
+}
+
+.data-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.data-list span {
+  border-radius: 999px;
+  background: #f1f5f9;
+  padding: 6px 10px;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .badge {
